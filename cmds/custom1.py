@@ -8,7 +8,11 @@ from discord.ext import commands
 from core import Cog_Extension
 
 class Custom1(Cog_Extension):
+    def __init__(self, bot):
+        self.todo = []
+        super().__init__(bot)
     pass
 
 async def setup(bot):
     await bot.add_cog(Custom1(bot))
+

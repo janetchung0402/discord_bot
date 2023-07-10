@@ -8,6 +8,9 @@ from discord.ext import commands
 from core import Cog_Extension
 
 class Custom2(Cog_Extension):
+    def __init__(self, bot):
+        self.todo = []
+        super().__init__(bot)
     pass
 
 async def setup(bot):
